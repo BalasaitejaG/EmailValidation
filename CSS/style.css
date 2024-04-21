@@ -44,6 +44,11 @@ ul li a:hover {
   width: 15px;
   filter: invert(1);
 }
+.logo span {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 6px;
+}
 
 .main {
   display: flex;
