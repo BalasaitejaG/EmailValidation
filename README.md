@@ -13,7 +13,6 @@ Technologies Used:
 - JavaScript (Vanilla)
 
 Usage:
-Clone the repository:
 1. Clone the Repository
 2. after cloning the repo you have to create a file called 'config.js'
 ```bash
