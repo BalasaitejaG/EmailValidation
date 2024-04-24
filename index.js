@@ -1,15 +1,14 @@
 submitBtn.addEventListener("click", async (e) => {
   e.preventDefault();
-  console.log("Clicked!");
   resultCont.innerHTML = `<img width="40px" src="/images/loading.svg" alt="">`;
   let email = document.getElementById("username").value;
-  let url = `https://api.emailvalidation.io/v1/info?apikey=${config.API_KEY}&email=${email}`;
+  let url = `https://api.emailvalidation.io/v1/info?apikey=${API_KEY}&email=${email}`;
   let res = await fetch(url);
   let result = await res.json();
   let str = ``;
-  for (config.API_KEY of Object.keys(result)) {
-    if (result[config.Key.API_KEY] !== "" && result[config.API_KEY] !== " ") {
-      str = str + `<div>${config.API_KEY}: ${result[config.API_KEY]}</div>`;
+  for (let key of Object.keys(result)) {
+    if (result[key] !== "" && result[key] !== " ") {
+      str = str + `<div>${key}: ${result[key]}</div>`;
     }
   }
   console.log(str);
