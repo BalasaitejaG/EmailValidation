@@ -15,7 +15,17 @@ Technologies Used:
 Usage:
 Clone the repository:
 1. Clone the Repository
-2. Open 'index.html' in your web browser to use the application.
+2. after cloning the repo you have to create a file called 'config.js'
+```bash
+  touch config.js
+```
+  - this config file holde your api key
+3. Crate a variable that stores your api-key,
+```bash
+let API_KEY="your_apikey here"
+```
+  - That's ot you are good to go
+4. Open 'index.html' in your web browser to use the application.
 
 Project Structure:
 
