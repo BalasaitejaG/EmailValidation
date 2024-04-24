@@ -8,7 +8,7 @@ submitBtn.addEventListener("click", async (e) => {
   let result = await res.json();
   let str = ``;
   for (config.API_KEY of Object.keys(result)) {
-    if (result[config.API_KEY] !== "" && result[config.API_KEY] !== " ") {
+    if (result[config.Key.API_KEY] !== "" && result[config.API_KEY] !== " ") {
       str = str + `<div>${config.API_KEY}: ${result[config.API_KEY]}</div>`;
     }
   }
